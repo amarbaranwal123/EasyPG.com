@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Registration Page</title>
+   <link rel="stylesheet" type="text/css" href="registercss.css">
+<body>
+
+ 
+		       <div id="header">
+			   
+			   <ul>
+			   <h1 style="margin-left:10px">EasyPG.com</h1>
+			   
+			    <li><a href="login.html">Login</a></li>
+					 <li><a href="register.html">Register</a></li>
+					  <li><a href="aboutus.html">About us</a></li>
+					  
+					    <li><a href="contactus.html">Contact us</a></li>
+						 <li><a href="Home.html">Home</a></li>
+			   </ul>
+			   </div>
+
+ <div class="loginbox" style="align:center;">
+ <img src="back.png" class="avatar" align="center">
+ <h1>Register Yourself Here</h1>
+<form id="regi" method="GET" onsubmit="return validation()">
+	Who Are You ?<br><br>
+	<select><option>Home Owner</option>
+		<option>Client</option></select><br><br>
+<label>Your Name : </label>
+<input type="Text" name="fname" placeholder="Enter name" id="name"><br>
+<label>Address : </label>
+<input type="Text" name="add" placeholder="Enter Address" id="add"><br>
+<label>Mobile no. : </label><br>
+<input type="text" name="mobile" placeholder="Enter Number"><br>
+<label>Email : </label>
+<input type="email" name="mail" placeholder="Enter Email"><br>
+<label>Gender  :  </label><br><br>
+<select>
+	<option>Male</option>
+	<option>Female</option><br>
+</select><br><br>
+<label>Username : </label>
+<input type="Text" name="uname" placeholder="john123"><br>
+<label>Enter Password : </label>
+<input type="password" name="fpas" placeholder="Enter Password" id="fpas"><br><br>
+<input type="password" name="spas" placeholder="ReEnter Password" id="spas"><br><br>
+<input type="submit" id="submit" value="Register">
+</form>
+</div>
+
+<script type="text/javascript">
+    	function validation(){
+    		var fnam=document.forms["regi"]["fname"];
+    		var ad=document.forms["regi"]["add"];
+    		var mob=document.forms["regi"]["mobile"];
+    		var email=document.forms["regi"]["mail"];
+    		var unam=document.forms["regi"]["uname"];
+    		var password=document.forms["regi"]["pass"];
+    if (fnam.value == "")                                  
+    { 
+        window.alert("Please enter Your Name.");
+        return false; 
+    } 
+   
+    if (ad.value == "")                               
+    { 
+        window.alert("Please Enter Your Address.");
+        return false; 
+    } 
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address.");
+        return false; 
+    } 
+    if (password.value == "" || password.value.length<6)                        
+    { 
+        window.alert("Password Length should be greater or equal to 6"); 
+        return false; 
+    } 
+    if(mob.value=="" ||mob.value.length!=10){
+    	alert("Mobile Number is incorrect");
+    	return false;
+    }
+    if (uname.value == "")                                   
+    { 
+        window.alert("Please enter Username.");
+        return false; 
+    } 
+   
+    return true; 
+    	}
+    </script>
+
+</body>
+</html>

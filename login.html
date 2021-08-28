@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Login Page</title>
+   <link rel="stylesheet" type="text/css" href="logincss.css">
+<body>
+<div id="header">
+  <ul>
+
+		<h1 style="margin-left:10px">EasyPG.com</h1>
+			   
+		<li><a href="login.html">Login</a></li>
+		<li><a href="register.html">Register</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="contactus.html">Contact us</a></li>
+		<li><a href="Home.html">Home</a></li>
+	</ul>
+</div>
+
+ <div class="loginbox" style="align:center;">
+ <img src="back.png" class="avatar" align="center">
+ <h1>Login Here</h1>
+<form class="form1" id="form1" method="post">
+<label id="log">User Name : </label>
+<input type="Text" name="user" id="ser" placeholder="Enter Username"><br>
+<label>PassWord : </label>
+<input type="password" name="pass" id="pass" placeholder="Enter Password" onkeyup="validate()"><label style="font-family: cursive; font-weight: bold;font-size: 14px;">Pass_strength : <span id="my" style="color: red;">no strength</span></label><br>
+<br><input type="submit" value="LogIn"  id="submit" onclick="return validForm()">
+<input type="submit" value="Register" onclick="openwin()">
+<a href="#" onclick="forgetpas()" style="color:red; text-align: right;">Forgot Password?</a><br>
+</form>
+</div>
+
+<script type="text/javascript">
+      function validate()
+      {
+        var msg=document.getElementById("pass");
+        if(msg.value.length>6)
+        {
+          msg="good";
+        }
+        else
+        {
+          msg="poor";
+        }
+        document.getElementById('my').innerText=msg;
+      }
+    	function validForm()
+      {
+    		var use=document.getElementById("ser");
+    		var pas=document.getElementById("pass");
+    		if (use.value=="" ) 
+        {
+    			alert("UserName cannot be empty");
+    			return false;
+    		}
+        if(pas.value.length<=6)
+        {
+          alert("Password must be greater than 6 characters");
+          return false;
+        }
+        return true;
+    	}
+      function forgetpas()
+      {
+        var v=confirm("Did you forgot your password..? If YES than press OK else press CANCLE ");
+        if(v==true)
+        {
+          window.open("forgotpage.html");
+        }
+        else
+        {
+          alert("HaHaHa , You remember it dude....!");
+        }
+      }
+      function openwin()
+      {
+        window.open("register.html");
+      }
+    </script>
+
+</body>
+</html>
+
+      
+  

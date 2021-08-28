@@ -1,0 +1,290 @@
+#outer
+{
+height:1100px;
+width:1300px;
+border:1px solid white;
+margin:0px auto;
+background-color:white;
+background-repeat:no-repeat;
+
+}
+*
+{
+padding:0px;
+margin:0px;
+}
+#header
+{
+opacity: 0.9;
+filter:(opacity=90):
+}
+
+#header ul
+{
+height:60px;
+line-height:60px;
+background-color:skyblue;
+color:black;
+
+
+}
+#header ul li
+{
+list-style-type:none;
+display:inline-block;
+float:right;
+text-shadow:10px 10px 15px white;
+}
+#header ul a
+{
+	font-weight: bold;
+color:black;
+text-decoration:none;
+padding:20px;
+
+}
+
+#header ul li:hover
+{
+background:#8FB0BF;
+transition:all 0.40s;
+}
+#header h1
+{
+float:left;
+width:300px;
+cursor:pointer;
+margin-left:30px;
+}
+
+
+a
+{
+text-decoration:none;
+color:black;
+
+
+}
+ a:hover
+{
+color:grey;
+}
+
+#upper
+{
+border:1px solid white;
+height:400px;
+width:1300px;
+background:url(contactusbg.jpg);
+box-shadow:10px 10px 15px skyblue;
+repeat:no-repeat;
+}
+.mid
+{
+
+height:500px;
+width:600px;
+border:1px solid white;
+margin-left:28px;
+margin-top:20px;
+float:left;
+box-shadow:10px 10px 15px skyblue;
+}
+#up
+{
+height:100px;
+width:1200px;
+border:1px solid white;
+margin-left:45px;
+margin-top:380px;
+box-shadow:10px 10px 15px skyblue;
+
+
+}
+#up h1
+{
+
+font-size:30px;
+color:black;
+text-align:center;
+margin-top:25px;
+text-shadow:10px 10px 15px grey;
+}
+#ic
+{
+height:120px;
+width:120px;
+border:1px solid white;
+margin-left:45px;
+margin-top:380px;
+
+box-shadow:10px 10px 15px grey;
+}
+#footer
+{
+
+height:80px;
+width:1300px;
+border:1px auto;
+margin-top:540px;
+}
+#footer
+{
+opacity: 0.7;
+filter:(opacity=70):
+}
+
+#footer ul li
+{
+list-style-type:none;
+display:inline-block;
+float:right;
+}
+#footer ul a
+{
+color:white;
+text-decoration:none;
+padding:20px;
+
+}
+
+#footer ul li:hover
+{
+background:#8FB0BF;
+transition:all 0.40s;
+}
+#footer h1
+{
+float:left;
+width:300px;
+cursor:pointer;
+margin-left:30px;
+}
+#copy
+{
+	
+height:30px;
+width:1300px;
+border:1px auto;
+color:black;
+background-color:skyblue;
+text-align:center;
+margin-top:15px;
+opacity: 0.9;
+filter:(opacity=70):
+
+
+}
+
+.sc
+{
+height:100px;
+width:170px;
+margin-left:20px;
+margin-top:50px;
+border:1px solid white;
+float:left;
+}
+.img
+{
+text-align:center;
+margin-top:30px;
+margin-left:50px;
+}
+
+#copy a
+{
+	font-weight: bold;
+text-decoration:none;
+color:black;
+}
+
+
+
+
+
+
+
+
+table
+{margin-top:0px;
+margin-left:150px;
+padding:10px;
+}
+tr
+{
+font-size:25px;
+margin-left:0px;
+margin-top:60px;
+
+}
+th
+{
+padding:20px;
+}
+td
+{
+padding:10px;
+width:30px;
+
+}
+.btn
+{
+	font-weight:bolder;
+height:40px;
+width:300px;
+padding:5px;
+color:black;
+cursor:pointer;
+background-color:skyblue;
+}
+.btn:hover
+{
+color:black;
+background-color:yellow;
+}
+.loginbox p{
+	 margin:0;
+	 padding:0;
+	 font-weight:bold;
+}
+.loginbox input{
+	width:100%;
+	margin-bottom:20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+	 border:none;
+	 border-bottom:1px solid #fff;
+	 background:none;
+	 height:40px;
+	 color:#fff;
+	 font-size:16px;
+	}
+.mid input[type="submit"]
+{
+	font-weight: bold;
+	border:none;
+	outline:none;
+	height:40px;	
+	background: lightblue;
+	color: black;
+	font-size:18px;
+	border-radius:20px;
+}
+.mid input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+.mid a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+	color:white;
+}
+.mid a:hover
+{
+	color:#ffc107;
+}
